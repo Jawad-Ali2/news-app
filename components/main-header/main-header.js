@@ -1,6 +1,5 @@
-import Image from "next/image";
-import logoImg from "@/assets/logo.jpg";
 import Link from "next/link";
+import HeaderLinks from "./header-links";
 export default function MainHeader() {
   return (
     <header id="main-header">
@@ -10,7 +9,10 @@ export default function MainHeader() {
       <nav>
         <ul>
           <li>
-            <Link href={"/news"}>News</Link>
+            <HeaderLinks href={"/news"}>News</HeaderLinks>
+          </li>
+          <li>
+            <HeaderLinks href={"/archive"}>Archive</HeaderLinks>
           </li>
         </ul>
       </nav>
